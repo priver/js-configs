@@ -1,17 +1,18 @@
 {
-  "private": true,
   "name": "linters",
-  "repository": "https://github.com/priver/linters",
+  "private": true,
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=16"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "lerna run test",
-    "release": "yarn test && lerna publish"
+    "lint:check": "eslint .",
+    "lint": "eslint --fix .",
+    "test": "npm run --workspaces --if-present test",
+    "release": "npm run test && lerna publish",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -20,9 +21,9 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "husky": "^3.0.9",
+    "husky": "^7.0.4",
     "lerna": "^3.13.1",
-    "lint-staged": "^9.4.2",
+    "lint-staged": "^12.3.8",
     "tslint": "^5.14.0",
     "typescript": "^3.3.3333"
   }
