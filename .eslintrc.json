@@ -1,8 +1,0 @@
-{
-    "root": true,
-    "extends": [
-        "./packages/eslint-config/index.js",
-        "./packages/eslint-config-import/index.js",
-        "./packages/eslint-config-node/index.js"
-    ]
-}
