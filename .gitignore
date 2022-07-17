@@ -1,11 +1,9 @@
-# Logs
-lerna-debug.log*
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
 # Dependency directories
 node_modules/
 
+# Logs
+npm-debug.log*
+
 # IDE / OS files
+.vscode
 .DS_Store

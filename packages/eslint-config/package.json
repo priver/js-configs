@@ -8,37 +8,77 @@
     "config",
     "priver",
     "javascript",
+    "typescript",
     "styleguide"
   ],
   "license": "MIT",
   "author": "Mikhail Priver <m.priver@gmail.com> (https://github.com/priver)",
   "homepage": "https://github.com/priver/linters",
-  "repository": "https://github.com/priver/linters/tree/master/packages/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/linters.git",
+    "directory": "packages/eslint-config"
+  },
   "bugs": "https://github.com/priver/linters/issues",
   "engines": {
-    "node": ">=8"
+    "node": ">=16"
   },
   "publishConfig": {
     "access": "public"
   },
   "main": "index.js",
   "files": [
+    "globals",
     "rules",
-    "index.js"
+    "browser.js",
+    "node-ts.js",
+    "node.js"
   ],
   "scripts": {
-    "unused": "eslint-find-rules --unused ./index.js",
-    "deprecated": "eslint-find-rules --deprecated ./index.js",
-    "test": "yarn unused && yarn deprecated"
-  },
-  "dependencies": {
-    "eslint-restricted-globals": "^0.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^5.15.1",
-    "eslint-find-rules": "^3.3.1"
+    "unused:core": "eslint-find-rules --unused ./rules/core.js",
+    "unused:compat": "eslint-find-rules --unused --no-core ./rules/compat.js",
+    "unused:eslint-comments": "eslint-find-rules --unused --no-core ./rules/eslint-comments.js",
+    "unused:import": "eslint-find-rules --unused --no-core ./rules/import.js",
+    "unused:jest-formatting": "eslint-find-rules --unused --no-core ./rules/jest-formatting.js",
+    "unused:jest": "eslint-find-rules --unused --no-core ./rules/jest.js",
+    "unused:node": "eslint-find-rules --unused --no-core ./rules/node.js",
+    "unused:react-hooks": "eslint-find-rules --unused --no-core ./rules/react-hooks.js",
+    "unused:react": "eslint-find-rules --unused --no-core ./rules/react.js",
+    "unused:typescript": "eslint-find-rules --unused --no-core ./rules/typescript.js",
+    "unused": "concurrently npm:unused:*",
+    "deprecated:core": "eslint-find-rules --deprecated ./rules/core.js",
+    "deprecated:compat": "eslint-find-rules --deprecated --no-core ./rules/compat.js",
+    "deprecated:eslint-comments": "eslint-find-rules --deprecated --no-core ./rules/eslint-comments.js",
+    "deprecated:import": "eslint-find-rules --deprecated --no-core ./rules/import.js",
+    "deprecated:jest-formatting": "eslint-find-rules --deprecated --no-core ./rules/jest-formatting.js",
+    "deprecated:jest": "eslint-find-rules --deprecated --no-core ./rules/jest.js",
+    "deprecated:node": "eslint-find-rules --deprecated --no-core ./rules/node.js",
+    "deprecated:react-hooks": "eslint-find-rules --deprecated --no-core ./rules/react-hooks.js",
+    "deprecated:react": "eslint-find-rules --deprecated --no-core ./rules/react.js",
+    "deprecated:typescript": "eslint-find-rules --deprecated --no-core ./rules/typescript.js",
+    "deprecated": "concurrently npm:deprecated:*",
+    "test": "npm run unused && npm run deprecated"
   },
   "peerDependencies": {
-    "eslint": "^5.15.0"
+    "eslint": "^8.13.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-compat": "^4.0.2",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "eslint": "^8.19.0",
+    "eslint-find-rules": "^4.1.0"
   }
 }

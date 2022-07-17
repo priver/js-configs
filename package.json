@@ -1,29 +1,31 @@
 {
-  "private": true,
   "name": "linters",
-  "repository": "https://github.com/priver/linters",
+  "private": true,
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=16"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "lerna run test",
-    "release": "yarn test && lerna publish"
+    "change:check": "beachball check",
+    "change": "beachball change",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint:check": "eslint --ext .js .",
+    "lint": "eslint --fix --ext .js .",
+    "test": "npm run --workspaces --if-present test",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-lerna-scopes": "^8.2.0",
-    "eslint": "^5.15.1",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "husky": "^3.0.9",
-    "lerna": "^3.13.1",
-    "lint-staged": "^9.4.2",
-    "tslint": "^5.14.0",
-    "typescript": "^3.3.3333"
+    "@commitlint/config-conventional": "^17.0.3",
+    "@prettier/plugin-xml": "^2.2.0",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "beachball": "^2.25.1",
+    "eslint": "^8.19.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   }
 }
