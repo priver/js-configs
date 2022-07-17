@@ -2,6 +2,21 @@
   "name": "@priver/eslint-config",
   "entries": [
     {
+      "date": "Sun, 17 Jul 2022 14:37:28 GMT",
+      "tag": "@priver/eslint-config_v7.0.0",
+      "version": "7.0.0",
+      "comments": {
+        "none": [
+          {
+            "author": "m.priver@gmail.com",
+            "package": "@priver/eslint-config",
+            "commit": "f430c88e3f005166ed5f07acf2a6ac861351fb52",
+            "comment": "Rename repo to js-configs and default branch to main"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 17 Jul 2022 13:43:17 GMT",
       "tag": "@priver/eslint-config_v7.0.0",
       "version": "7.0.0",

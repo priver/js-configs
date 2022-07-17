@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "Rename repo to js-configs and default branch to main",
-  "packageName": "@priver/eslint-config",
-  "email": "m.priver@gmail.com",
-  "dependentChangeType": "none"
-}
