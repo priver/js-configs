@@ -1,5 +1,11 @@
 # @priver/eslint-config
 
+## 7.0.2
+
+### Patch Changes
+
+- e2773be: Fix package.json files
+
 ## 7.0.1
 
 ### Patch Changes
