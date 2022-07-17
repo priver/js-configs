@@ -2,7 +2,7 @@
 
 /** @type {import('beachball').BeachballConfig}*/
 module.exports = {
-  branch: 'origin/master',
+  branch: 'origin/main',
   changehint: 'Run "npm run change" to create a change file',
   ignorePatterns: [
     // lockfile

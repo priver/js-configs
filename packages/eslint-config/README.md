@@ -4,13 +4,11 @@ Shareable config for [eslint].
 
 [![npm version](https://img.shields.io/npm/v/@priver/eslint-config.svg)](https://www.npmjs.com/package/@priver/eslint-config)
 [![npm downloads](https://img.shields.io/npm/dm/@priver/eslint-config.svg)](https://www.npmjs.com/package/@priver/eslint-config)
-[![license](https://img.shields.io/github/license/priver/linters.svg)](https://github.com/priver/linters/blob/master/LICENSE.txt)
+[![license](https://img.shields.io/github/license/priver/js-configs.svg)](https://github.com/priver/js-configs/blob/main/LICENSE.txt)
 
 ## Installation
 
-```bash
-yarn add --dev eslint @rushstack/eslint-patch @priver/eslint-config
-# or
+```sh
 npm install --save-dev eslint @rushstack/eslint-patch @priver/eslint-config
 ```
 
@@ -26,9 +24,6 @@ npm install --save-dev eslint @rushstack/eslint-patch @priver/eslint-config
 - [eslint-plugin-jest-formatting]
 - [eslint-plugin-eslint-comments]
 - [eslint-config-prettier]
-
-  "eslint-plugin-react": "^7.30.1",
-  "eslint-plugin-react-hooks": "^4.6.0"
 
 ## Usage
 
