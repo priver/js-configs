@@ -1,5 +1,5 @@
 {
-  "name": "linters",
+  "name": "js-configs",
   "private": true,
   "workspaces": [
     "./packages/*"
