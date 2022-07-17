@@ -2,9 +2,9 @@ name: Test
 
 on:
   push:
-    branches: [$default-branch]
+    branches: [main]
   pull_request:
-    branches: [$default-branch]
+    branches: [main]
 
 jobs:
   test:
@@ -16,7 +16,6 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'npm'
       - run: npm ci --ignore-scripts --no-fund --no-audit
-      - run: npm run changeset:check
       - run: npm run format:check
       - run: npm run lint:check
       - run: npm test

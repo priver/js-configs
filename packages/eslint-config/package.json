@@ -26,13 +26,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "main": "browser.js",
   "files": [
     "globals",
     "rules",
     "browser.js",
     "node-ts.js",
-    "node.js"
+    "node-cjs.js"
   ],
   "scripts": {
     "unused:core": "eslint-find-rules --unused ./rules/core.js",
