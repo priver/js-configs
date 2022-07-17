@@ -1,7 +1,0 @@
-{
-  "type": "major",
-  "comment": "Complete rewrite of eslint-config",
-  "packageName": "@priver/eslint-config",
-  "email": "m.priver@gmail.com",
-  "dependentChangeType": "patch"
-}
