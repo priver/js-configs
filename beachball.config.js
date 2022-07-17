@@ -4,8 +4,6 @@
 module.exports = {
   branch: 'origin/master',
   changehint: 'Run "npm run change" to create a change file',
-  publish: false,
-  push: false,
   ignorePatterns: [
     // lockfile
     'package-lock.json',
