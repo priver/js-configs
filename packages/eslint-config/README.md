@@ -2,9 +2,10 @@
 
 Shareable config for [eslint].
 
-[![npm version](https://img.shields.io/npm/v/@priver/eslint-config.svg)](https://www.npmjs.com/package/@priver/eslint-config)
-[![npm downloads](https://img.shields.io/npm/dm/@priver/eslint-config.svg)](https://www.npmjs.com/package/@priver/eslint-config)
-[![license](https://img.shields.io/github/license/priver/js-configs.svg)](https://github.com/priver/js-configs/blob/main/LICENSE.txt)
+[![NPM version](https://img.shields.io/npm/v/@priver/eslint-config)](https://www.npmjs.com/package/@priver/eslint-config)
+[![Node version](https://img.shields.io/node/v/@priver/eslint-config)](https://www.npmjs.com/package/@priver/eslint-config)
+[![Dependency status](https://img.shields.io/librariesio/release/npm/@priver/eslint-config)](https://www.npmjs.com/package/@priver/eslint-config)
+[![NPM License](https://img.shields.io/npm/l/@priver/eslint-config)](https://www.npmjs.com/package/@priver/eslint-config)
 
 ## Installation
 
