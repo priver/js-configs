@@ -8,8 +8,8 @@
     "node": ">=16"
   },
   "scripts": {
-    "change:check": "beachball check",
-    "change": "beachball change",
+    "changeset:check": "changeset status",
+    "changeset": "changeset add",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "lint:check": "eslint --ext .js .",
@@ -18,10 +18,10 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.23.2",
     "@commitlint/config-conventional": "^17.0.3",
     "@prettier/plugin-xml": "^2.2.0",
     "@rushstack/eslint-patch": "^1.1.4",
-    "beachball": "^2.25.1",
     "eslint": "^8.19.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
