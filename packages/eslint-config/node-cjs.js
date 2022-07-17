@@ -39,7 +39,6 @@ module.exports = {
         '**/.eslintrc.js',
         '**/.lintstagedrc.js',
         '**/.prettierrc.js',
-        '**/beachball.config.js',
         '**/jest.config.js',
         '**/webpack.*.js',
       ],
