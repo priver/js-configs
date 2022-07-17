@@ -8,6 +8,8 @@
     "node": ">=16"
   },
   "scripts": {
+    "change:check": "beachball check",
+    "change": "beachball change",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "lint:check": "eslint --ext .js .",
@@ -16,11 +18,10 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@commitlint/config-lerna-scopes": "^17.0.2",
     "@prettier/plugin-xml": "^2.2.0",
     "@rushstack/eslint-patch": "^1.1.4",
+    "beachball": "^2.25.1",
     "eslint": "^8.19.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

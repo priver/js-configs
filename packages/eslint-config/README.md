@@ -43,6 +43,7 @@ Add the following in your `.eslintrc.js`:
 
 require('@rushstack/eslint-config/patch/modern-module-resolution');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ['@priver/eslint-config/browser'],
@@ -80,6 +81,7 @@ Add the following in your `.eslintrc.js`:
 
 require('@rushstack/eslint-config/patch/modern-module-resolution');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ['@priver/eslint-config/node-ts'],
@@ -109,6 +111,7 @@ Add the following in your `.eslintrc.js`:
 
 require('@rushstack/eslint-config/patch/modern-module-resolution');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ['@priver/eslint-config/node-cjs'],

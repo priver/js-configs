@@ -2,6 +2,7 @@
 
 const nodeGlobals = require('./globals/node');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: [
     require.resolve('./rules/core'),

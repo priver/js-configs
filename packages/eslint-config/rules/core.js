@@ -2,6 +2,7 @@
 
 const confusingBrowserGlobals = require('confusing-browser-globals');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   rules: {
     // Possible problems

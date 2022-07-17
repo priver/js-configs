@@ -2,6 +2,7 @@
 
 const nodeGlobals = require('./globals/node');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: [
     require.resolve('./rules/core'),
@@ -35,10 +36,10 @@ module.exports = {
   overrides: [
     {
       files: [
-        '**/.commitlintrc.js',
         '**/.eslintrc.js',
         '**/.lintstagedrc.js',
         '**/.prettierrc.js',
+        '**/beachball.config.js',
         '**/jest.config.js',
         '**/webpack.*.js',
       ],

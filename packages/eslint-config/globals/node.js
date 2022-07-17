@@ -1,5 +1,6 @@
 'use strict';
 
+/** @type {import('eslint').Linter.Config['globals']} */
 module.exports = {
   // ECMAScript
   ArrayBuffer: 'readonly',
