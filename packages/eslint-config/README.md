@@ -98,7 +98,7 @@ module.exports = {
 };
 ```
 
-### JavaScript: node apps, libs and condigs in CommonJS
+### JavaScript: node apps, libs and configs in CommonJS
 
 Add the following in your `.eslintrc.js`:
 
